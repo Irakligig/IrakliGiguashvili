@@ -13,21 +13,31 @@ namespace practical_1_4_
             //double min, max, average;
             //OutFunction(arr, out min ,out  max , out average);
             //(double min, double max, double average) tuple = TupleFunction(arr);
-            List<Book> listofbooks = new List<Book>();
-            listofbooks.Add(new Book("author1","book1",1995));
-            listofbooks.Add(new Book("author2", "book2", 1990));
-            listofbooks.Add(new Book("author3", "book3", 1970));
-            listofbooks.Add(new Book("author4", "book4", 2015));
-            listofbooks.Add(new Book("author5", "book5", 1700));
-            foreach (Book book in listofbooks)
-            {
-                Console.WriteLine(book);
-            }
-            listofbooks.Sort();
-            foreach (Book book in listofbooks)
-            {
-                Console.WriteLine(book);
-            }
+            //List<Book> listofbooks = new List<Book>();
+            //listofbooks.Add(new Book("author1","book1",1995));
+            //listofbooks.Add(new Book("author2", "book2", 1990));
+            //listofbooks.Add(new Book("author3", "book3", 1970));
+            //listofbooks.Add(new Book("author4", "book4", 2015));
+            //listofbooks.Add(new Book("author5", "book5", 1700));
+            //foreach (Book book in listofbooks)
+            //{
+            //    Console.WriteLine(book);
+            //}
+            //listofbooks.Sort();
+            //foreach (Book book in listofbooks)
+            //{
+            //    Console.WriteLine(book);
+            //}
+
+            Status z = new Status();
+            Console.WriteLine("Enter pow parameters");
+            Console.Write("Enter number:  ");
+            double x = double.Parse(Console.ReadLine());
+            Console.Write("Enter powerof:  ");
+            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine(MATH.Pow(x,y,out z));
+            Console.WriteLine(z.ToString());
+
         }
 
     
